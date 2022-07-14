@@ -3,12 +3,12 @@ package zxy.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
+import org.springframework.beans.factory.annotation.Value;
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class School {
     private String name;
-    private String age;
-    private String[] wife;
+    private Integer age;
+    private String loc;
 }

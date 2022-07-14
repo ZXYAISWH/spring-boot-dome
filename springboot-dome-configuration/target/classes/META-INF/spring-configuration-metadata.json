@@ -1,21 +1,46 @@
 {
   "groups": [
     {
+      "name": "school",
+      "type": "zxy.config.School",
+      "sourceType": "zxy.config.School"
+    },
+    {
       "name": "user",
-      "type": "zxy.config.Config",
-      "sourceType": "zxy.config.Config"
+      "type": "zxy.config.Configs",
+      "sourceType": "zxy.config.Configs"
     }
   ],
   "properties": [
     {
+      "name": "school.age",
+      "type": "java.lang.Integer",
+      "sourceType": "zxy.config.School"
+    },
+    {
+      "name": "school.loc",
+      "type": "java.lang.String",
+      "sourceType": "zxy.config.School"
+    },
+    {
+      "name": "school.name",
+      "type": "java.lang.String",
+      "sourceType": "zxy.config.School"
+    },
+    {
       "name": "user.age",
       "type": "java.lang.String",
-      "sourceType": "zxy.config.Config"
+      "sourceType": "zxy.config.Configs"
     },
     {
       "name": "user.name",
       "type": "java.lang.String",
-      "sourceType": "zxy.config.Config"
+      "sourceType": "zxy.config.Configs"
+    },
+    {
+      "name": "user.wife",
+      "type": "java.lang.String[]",
+      "sourceType": "zxy.config.Configs"
     }
   ],
   "hints": []

@@ -1,0 +1,27 @@
+#server:
+#  port: 8090
+
+user:
+  names: \u5F20\u4E09
+  age: 18
+#  wife:
+#    - \u559C\u7F8A\u7F8A
+#    - \u61D2\u6D0B\u6D0B
+#    - \u6CB8\u7F8A\u7F8A
+spring:
+  profiles:
+    active: prod
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8081
+
+---
+spring:
+  profiles: prod
+
+server:
+  port: 8082
