@@ -1,0 +1,10 @@
+server:
+  port: 8099
+
+jasypt:
+  encryptor:
+    password: duing
+
+info:
+  key: WY4qwIMrSKUEFUfBOWRrVw==
+

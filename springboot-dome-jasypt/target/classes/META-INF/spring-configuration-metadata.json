@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "info",
+      "type": "com.zxy.config.JasyptConfig",
+      "sourceType": "com.zxy.config.JasyptConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "info.key",
+      "type": "java.lang.String",
+      "sourceType": "com.zxy.config.JasyptConfig"
+    },
+    {
+      "name": "info.value",
+      "type": "java.lang.String",
+      "sourceType": "com.zxy.config.JasyptConfig"
+    }
+  ],
+  "hints": []
+}
