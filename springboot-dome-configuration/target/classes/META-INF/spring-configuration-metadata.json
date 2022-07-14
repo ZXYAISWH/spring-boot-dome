@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "user",
+      "type": "zxy.config.Config",
+      "sourceType": "zxy.config.Config"
+    }
+  ],
+  "properties": [
+    {
+      "name": "user.age",
+      "type": "java.lang.String",
+      "sourceType": "zxy.config.Config"
+    },
+    {
+      "name": "user.name",
+      "type": "java.lang.String",
+      "sourceType": "zxy.config.Config"
+    }
+  ],
+  "hints": []
+}
