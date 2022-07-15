@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    <form action="/login" method="get">-->
+<!--        <input type="hidden" name="_method" value="put">-->
+<!--        <p>账号:<input type="text" name="account"></p>-->
+<!--        <p><input type="submit"></p>-->
+<!--    </form>-->
+    <p id="post">post测试</p>
+    <p id="get">get测试</p>
+    <p id="put">put测试</p>
+    <p id="delete">delete测试</p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#post").click(function () {
+        $.post("/test/post", {name: "zhangsan"}, function (data) {
+            console.log(data)
+        }, "text")
+    })
+
+    $("#get").click(function () {
+// $.get("/test/get/lisi",{name:"zhangsan"},function (data) {
+//     console.log(data)
+// },"text")
+        $.ajax({
+            url: "/test/get/lisi",
+            dataType: "text",
+            type: "get",
+            async: true,
+            success: function (data) {
+                console.log(data)
+            }
+        })
+    })
+
+    $("#put").click(function () {
+        $.ajax({
+            url: "/test/put",
+            data: {name: "zhangsan"},
+            dataType: "text",
+            type: "put",
+            async: true,
+            success: function (data) {
+                console.log(data)
+            }
+        })
+    })
+
+    $("#delete").click(function () {
+        $.ajax({
+            url: "/test/delete/zhangsan&lisi",
+            dataType: "text",
+            type: "delete",
+            async: true,
+            success: function (data) {
+                console.log(data)
+            }
+        })
+    })
+</script>
+</body>
+</html>
