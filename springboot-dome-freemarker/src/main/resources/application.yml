@@ -1,0 +1,15 @@
+server:
+  port: 9999
+
+#spring:
+#  mvc:
+#    view:
+#      #\u524D\u7F00
+#      prefix: /templates/
+#      #\u540E\u7F00
+#      suffix: .ftl
+
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates/
+    suffix: .ftl
