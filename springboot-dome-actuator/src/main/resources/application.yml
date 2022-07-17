@@ -1,0 +1,18 @@
+#\u67E5\u770B\u6240\u6709\u7AEF\u70B9
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  #\u5173\u95ED\u67D0\u4E2A\u7AEF\u70B9
+    beans:
+      enabled: false
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+
+info:
+  app:
+    name: "dome"
+    version: 1.0
