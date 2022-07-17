@@ -1,0 +1,3 @@
+logging:
+  file:
+    path: E:\git\clone\spring-boot-dome\log
